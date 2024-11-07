@@ -1,0 +1,33 @@
+.botm{
+    display: flex;
+    justify-content: space-between;
+}
+.nbhd{
+    width: 400px;
+    justify-content: space-between;
+}
+.food{
+    display: flex;
+    justify-content: space-evenly;
+}
+.alz{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    margin-inline: 10vw;
+}
+.tech{
+    display: flex;
+    width: 100vw;
+    justify-content: space-around;
+}
+.disvid{
+    width: 800px;
+}
+.fit{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
