@@ -13,11 +13,12 @@ import aos from 'aos';
 import { motion, AnimatePresence } from 'framer-motion'; // Import AnimatePresence
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import Funny from './components/Funny';
-
+import { MdArrowOutward } from "react-icons/md";
 import Mobilehor from './components/Mobilehorizontal';
 import Tabhor from './components/Tabhor';
 import { IoReturnDownBackOutline } from 'react-icons/io5';
 import Cntct from './pages/Contactpage';
+import Categ from './components/Categ';
 const Displayworks = lazy(() => import('./pages/Displayworks'));
 const Archives = lazy(() => import('./pages/Archives'));
 const Contact = lazy(() => import('./components/Contact'));
@@ -168,8 +169,9 @@ function App() {
                         <Texting />
                         <BTS />
                         {isMobile?(
-                          <><p id='workmobhd'>//WORKS</p>
-                          <Works/></>
+                          <><Link to={'/categ'} id='workmobhead'  >SEE MY WORKS<MdArrowOutward />
+</Link>
+<div className="spacing"></div></>
                         ):null}
                         {isMobile?(<Mobilehor/>):null}<Texting />
                         {isMobile?null:(
@@ -180,10 +182,10 @@ function App() {
                         {isMobile?(<Contact/>):null}
                         {isTab?(<Contact/>):null}
                       </motion.div>} />
-<Route path='/works' element={
+<Route path='/categ' element={
   <Suspense fallback={<div>Loading...</div>}>
     <motion.div {...pageTransition}>
-      <Displayworks/>
+      <Categ/>
     </motion.div>
   </Suspense>
 } />

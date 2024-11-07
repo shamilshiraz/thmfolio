@@ -17,9 +17,9 @@ function Categ() {
   };
 
   return (
-    <div className='works'>
-      <p>//WORKS</p>
-      <p>1-FOOD</p>
+    <div className='categ'>
+      <p id='workmobhead'>//WORKS</p>
+      <p className='catgh'>FOOD</p>
       <div className="food">
         <div className="nbhd">
           <video
@@ -34,9 +34,6 @@ function Categ() {
             <source src="/works/NBHDv.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p>THE NBHD</p>
-          </div>
 
         </div>
         <div className="nbhd">
@@ -128,7 +125,7 @@ function Categ() {
           </video>
         </div>
       </div>
-      <p>EVENTS</p>
+      <p className='catgh'>EVENTS</p>
       <div className="alz">
           <video
             preload="auto"
@@ -144,7 +141,7 @@ function Categ() {
           </video>
       </div>
       
-      <p>AUTOMOTIVES</p>
+      <p className='catgh'>AUTOMOTIVES</p>
       <div className="food">
         <div className="nbhd">
           <video
@@ -191,7 +188,7 @@ function Categ() {
           </video>
         </div>
       </div>
-      <p>TECH AND OTHERS</p>
+      <p className='catgh'>TECH AND OTHERS</p>
       <div className="alz">
           <video
             preload="auto"

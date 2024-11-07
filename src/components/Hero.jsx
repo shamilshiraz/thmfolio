@@ -83,7 +83,7 @@ const month = String(currentDate.getMonth() + 1).padStart(2, '0');
           </div>
           <div className="n1">
           <p id='smDs'>Sitemap</p>
-          <p style={{color:'grey'}}>INDEX<Link to={'/works'} id='links'> WORKS</Link></p>
+          <p style={{color:'grey'}}>INDEX<Link to={'/categ'} id='links'> WORKS</Link></p>
            <br />
           <Link to={'/archives'} id='links'>ARCHIVES</Link><Link to={'/contactpage'} id='links'> CONTACT</Link>
           </div>
