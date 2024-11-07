@@ -10,17 +10,10 @@ import BTS from './components/BTS';
 import Works from './components/Works';
 import Intro from './components/Intro';
 import aos from 'aos';
-import Display from './components/Display';
 import { motion, AnimatePresence } from 'framer-motion'; // Import AnimatePresence
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
-import Displaytwo from './components/Displaytwo';
 import Funny from './components/Funny';
-import Displaythree from './components/Displaythree';
-import Displayfour from './components/Displayfour';
-import Displayfive from './components/Displayfive';
-import Displaysix from './components/Displaysix';
-import Displayseven from './components/Displayseven';
-import Displayeight from './components/Displayeight';
+
 import Mobilehor from './components/Mobilehorizontal';
 import Tabhor from './components/Tabhor';
 import { IoReturnDownBackOutline } from 'react-icons/io5';
@@ -211,47 +204,7 @@ function App() {
                       </motion.div>
                       </Suspense>
                     } />                    
-                    <Route path='/nbhd' element={
-                      <motion.div {...pageTransition}>
-                        <Display />
-                      </motion.div>
-                    } />
-                    <Route path='/mouzmari' element={
-                      <motion.div {...pageTransition}>
-                        <Displaytwo />
-                      </motion.div>
-                    } />
-                  <Route path='/zeina' element={
-                      <motion.div {...pageTransition}>
-                        <Displaythree />
-                      </motion.div>
-                    } />
-                     <Route path='/redmi' element={
-                      <motion.div {...pageTransition}>
-                        <Displayfour/>
-                      </motion.div>
-                    } />
-                      <Route path='/alburda' element={
-                      <motion.div {...pageTransition}>
-                        <Displayfive/>
-                      </motion.div>
-                    } />
-                       <Route path='/s1' element={
-                      <motion.div {...pageTransition}>
-                        <Displaysix/>
-                      </motion.div>
-                    } />
-                      <Route path='/lr' element={
-                      <motion.div {...pageTransition}>
-                        <Displayseven/>
-                      </motion.div>
-                    } />
-                                          <Route path='/ai' element={
-                      <motion.div {...pageTransition}>
-                        <Displayeight/>
-                      </motion.div>
-                    } />
-                  </Routes>
+                     </Routes>
                 </AnimatePresence>
               </div>
             )

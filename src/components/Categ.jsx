@@ -1,6 +1,8 @@
 import React, { useRef, useState } from 'react';
 import { AiOutlineMuted, AiOutlineSound } from "react-icons/ai";
 import './Categ.css'
+import './display.css'
+
 
 
 function Categ() {
@@ -15,7 +17,7 @@ function Categ() {
   };
 
   return (
-    <div>
+    <div className='works'>
       <p>//WORKS</p>
       <p>1-FOOD</p>
       <div className="food">
@@ -27,6 +29,7 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/NBHDv.mp4" type="video/mp4" />
             Your browser does not support the video tag.
@@ -44,16 +47,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/mouzmari.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>MOUZMARI</p>
-          </div>
 
         </div>
         <div className="nbhd">
@@ -64,16 +62,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/mmasmr.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>MOUZMARI</p>
-          </div>
 
         </div>
       </div>
@@ -85,16 +78,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/zeina.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>LOCAL AL ZEINA</p>
-          </div>
       </div>
       <div className="food">
         <div className="nbhd">
@@ -105,17 +93,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/mmcrsck.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>THE NBHD</p>
-          </div>
-
         </div>
         <div className="nbhd">
           <video
@@ -125,17 +107,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/mmpck.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>MOUZMARI</p>
-          </div>
-
         </div>
         <div className="nbhd">
           <video
@@ -145,17 +121,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/mmsteak.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>MOUZMARI</p>
-          </div>
-
         </div>
       </div>
       <p>EVENTS</p>
@@ -167,16 +137,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/alburda.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>LOCAL AL ZEINA</p>
-          </div>
       </div>
       
       <p>AUTOMOTIVES</p>
@@ -189,16 +154,12 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/gwg.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>THE NBHD</p>
-          </div>
+
 
         </div>
         <div className="nbhd">
@@ -209,17 +170,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/leadrights.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>MOUZMARI</p>
-          </div>
-
         </div>
         <div className="nbhd">
           <video
@@ -229,17 +184,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/sto.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>MOUZMARI</p>
-          </div>
-
         </div>
       </div>
       <p>TECH AND OTHERS</p>
@@ -251,16 +200,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/aicircle.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>GOOGLE AI CIRCLE</p>
-          </div>
       </div>
       <div className="tech">
 
@@ -272,16 +216,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/redmi.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>REDMI 13</p>
-          </div>
 </div>
 <div className="nbhd">
           <video
@@ -291,16 +230,11 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/fitness.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>REDMI 13</p>
-          </div>
           </div>
           <div className="nbhd">
           <video
@@ -310,16 +244,12 @@ function Categ() {
             muted={mute} // Start with muted initially
             loop
             ref={videoRef}
+            controls
           >
             <source src="/works/s1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="botm">
-          <p onClick={toggleMute}>
-          {mute ? <AiOutlineMuted />:<AiOutlineSound /> }
-          </p>
-          <p>REDMI 13</p>
-          </div>
+
           </div>
           </div>
 
