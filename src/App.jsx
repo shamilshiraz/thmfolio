@@ -28,7 +28,7 @@ const Contact = lazy(() => import('./components/Contact'));
 
 function App() {
   const location = useLocation(); // Get location for AnimatePresence
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false); 
 
   useEffect(() => {
